@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="jdbc-drivers">
+    <CLASSES>
+      <root url="file://$APPLICATION_CONFIG_DIR$/jdbc-drivers" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="jar://$APPLICATION_CONFIG_DIR$/jdbc-drivers/hsqldb-2.3.2.jar!/" />
+    </excluded>
+    <jarDirectory url="file://$APPLICATION_CONFIG_DIR$/jdbc-drivers" recursive="false" />
+  </library>
+</component>
