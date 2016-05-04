@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="bean.Users" table="USERS">
+        <id name="id" type="int" column="id">
+            <generator class="native"/>
+        </id>
+        <property name="username" column="login" type="string"/>
+        <property name="pass" column="pass" type="string"/>
+    </class>
+
+    <query name="bean.Users.findByUsersId">
+        select users
+        from bean.Users as users
+        where users.id = :userId
+    </query>
+</hibernate-mapping>

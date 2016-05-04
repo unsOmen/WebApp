@@ -11,8 +11,9 @@
     <title>Test title</title>
   </head>
   <body>
-    <h1>TEST</h1><br>
-    <a href="reg.jsp">Registration</a><br>
-    <a href="Servlet">List users</a><br>
+    <h1><%= request.getAttribute("session_parameter")%></h1><br>
+    <a href="/reg.jsp">Registration</a><br>
+    <a href="ServletListUsers">List users</a><br>
+    <a href="/ServletHibernetList">List hibernet</a><br>
   </body>
 </html>
